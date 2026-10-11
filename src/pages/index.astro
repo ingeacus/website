@@ -1,0 +1,824 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="INGEACUS 2027 | Congreso Internacional de Acústica y Audio Profesional"
+  description="Congreso Internacional de Acústica y Audio Profesional. Valdivia, Chile 2027. Próximamente más información."
+>
+  <main class="page-container">
+    <!-- Ambient Acoustic Background -->
+    <div class="ambient-background" aria-hidden="true">
+      <div class="gradient-sphere sphere-1"></div>
+      <div class="gradient-sphere sphere-2"></div>
+      <div class="gradient-sphere sphere-3"></div>
+
+      <!-- Concentric Acoustic Waves -->
+      <svg class="acoustic-waves" viewBox="0 0 1000 1000" fill="none">
+        <circle cx="500" cy="500" r="180" class="wave-circle wave-1" />
+        <circle cx="500" cy="500" r="280" class="wave-circle wave-2" />
+        <circle cx="500" cy="500" r="380" class="wave-circle wave-3" />
+        <circle cx="500" cy="500" r="480" class="wave-circle wave-4" />
+      </svg>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Top Badge -->
+      <header class="header-badge-container">
+        <div class="location-badge" id="badge-valdivia">
+          <span class="pulse-dot"></span>
+          <span class="badge-text">VALDIVIA, CHILE &bull; 2027</span>
+        </div>
+      </header>
+
+      <!-- Hero & Brand -->
+      <section class="brand-hero" aria-label="Identidad del Congreso">
+        <div class="logo-icon-wrapper">
+          <div class="icon-glow" aria-hidden="true"></div>
+          <img
+            src="/logo-icon.svg"
+            alt="Isotipo INGEACUS - Icosaedro y Ondas Acústicas"
+            class="brand-icon"
+            width="140"
+            height="140"
+            loading="eager"
+          />
+        </div>
+
+        <div class="logo-text-wrapper">
+          <img
+            src="/logo-text.svg"
+            alt="INGEACUS"
+            class="brand-wordmark"
+            width="420"
+            height="120"
+            loading="eager"
+          />
+        </div>
+
+        <h1 class="congress-title">
+          Congreso Internacional de Acústica y Audio Profesional
+        </h1>
+        <p class="congress-subtitle">
+          Punto de encuentro internacional para la ciencia, ingeniería y tecnologías del sonido.
+        </p>
+      </section>
+
+      <!-- Countdown & Coming Soon Section -->
+      <section class="coming-soon-card" aria-label="Cuenta regresiva y anuncios">
+        <div class="card-glass-header">
+          <span class="announcement-pill">Próximamente</span>
+          <h2 class="card-title">Más información en camino</h2>
+          <p class="card-description">
+            Estamos preparando la convocatoria, fechas clave, conferencistas y programa oficial.
+          </p>
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div class="countdown-grid" id="countdown-timer" role="timer" aria-live="polite">
+          <div class="time-block">
+            <div class="time-number-card">
+              <span class="time-number" id="days">--</span>
+            </div>
+            <span class="time-label">Días</span>
+          </div>
+
+          <div class="time-separator" aria-hidden="true">:</div>
+
+          <div class="time-block">
+            <div class="time-number-card">
+              <span class="time-number" id="hours">--</span>
+            </div>
+            <span class="time-label">Horas</span>
+          </div>
+
+          <div class="time-separator" aria-hidden="true">:</div>
+
+          <div class="time-block">
+            <div class="time-number-card">
+              <span class="time-number" id="minutes">--</span>
+            </div>
+            <span class="time-label">Minutos</span>
+          </div>
+
+          <div class="time-separator" aria-hidden="true">:</div>
+
+          <div class="time-block">
+            <div class="time-number-card">
+              <span class="time-number" id="seconds">--</span>
+            </div>
+            <span class="time-label">Segundos</span>
+          </div>
+        </div>
+
+        <div class="countdown-footnote">
+          <svg class="footnote-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+          </svg>
+          <span>Apertura de convocatorias e información: <strong>Diciembre 2026</strong></span>
+        </div>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="social-section" aria-label="Canales y Redes Oficiales">
+        <h3 class="social-title">Sigue las novedades oficiales</h3>
+        <p class="social-subtitle">Conéctate a nuestras redes para enterarte primero de los anuncios y llamados a ponencias</p>
+
+        <div class="social-links-grid">
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/ingeacus.uach/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn social-instagram"
+            id="link-instagram"
+          >
+            <div class="social-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="social-btn-info">
+              <span class="social-platform">Instagram</span>
+              <span class="social-handle">@ingeacus.uach</span>
+            </div>
+            <svg class="arrow-svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/company/ingeacus/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn social-linkedin"
+            id="link-linkedin"
+          >
+            <div class="social-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="social-btn-info">
+              <span class="social-platform">LinkedIn</span>
+              <span class="social-handle">INGEACUS</span>
+            </div>
+            <svg class="arrow-svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/ingeacusuach"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn social-facebook"
+            id="link-facebook"
+          >
+            <div class="social-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </div>
+            <div class="social-btn-info">
+              <span class="social-platform">Facebook</span>
+              <span class="social-handle">ingeacusuach</span>
+            </div>
+            <svg class="arrow-svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-divider" aria-hidden="true"></div>
+        <p class="footer-text">
+          &copy; 2027 <strong>INGEACUS</strong> &bull; Congreso Internacional de Acústica y Audio Profesional
+        </p>
+        <p class="footer-subtext">
+          Valdivia, Región de Los Ríos, Chile
+        </p>
+      </footer>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  // Countdown Timer Logic
+  // Target date: December 1, 2026, 00:00:00 UTC-3 (Chile standard time)
+  const targetDate = new Date('2026-12-01T00:00:00-03:00').getTime();
+
+  const daysEl = document.getElementById('days');
+  const hoursEl = document.getElementById('hours');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      if (daysEl) daysEl.textContent = '00';
+      if (hoursEl) hoursEl.textContent = '00';
+      if (minutesEl) minutesEl.textContent = '00';
+      if (secondsEl) secondsEl.textContent = '00';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    const pad = (n: number) => String(n).padStart(2, '0');
+
+    if (daysEl) daysEl.textContent = pad(days);
+    if (hoursEl) hoursEl.textContent = pad(hours);
+    if (minutesEl) minutesEl.textContent = pad(minutes);
+    if (secondsEl) secondsEl.textContent = pad(seconds);
+  }
+
+  // Initial call and periodic interval
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+<style>
+  /* Layout & Page Container */
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1.5rem 4rem;
+    overflow: hidden;
+  }
+
+  /* Ambient Acoustic Waves & Mesh Gradients */
+  .ambient-background {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .gradient-sphere {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+  }
+
+  .sphere-1 {
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(5, 161, 152, 0.14) 0%, rgba(240, 253, 250, 0) 70%);
+  }
+
+  .sphere-2 {
+    width: 450px;
+    height: 450px;
+    bottom: 10%;
+    left: -100px;
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .sphere-3 {
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    right: -150px;
+    background: radial-gradient(circle, rgba(5, 161, 152, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  /* Concentric Acoustic Waves */
+  .acoustic-waves {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 900px;
+    opacity: 0.45;
+  }
+
+  .wave-circle {
+    stroke: var(--color-brand-primary);
+    stroke-width: 1.2;
+    transform-origin: center;
+    opacity: 0.25;
+  }
+
+  .wave-1 {
+    animation: wavePulse 6s ease-in-out infinite;
+  }
+  .wave-2 {
+    animation: wavePulse 6s ease-in-out infinite 1.5s;
+  }
+  .wave-3 {
+    animation: wavePulse 6s ease-in-out infinite 3s;
+  }
+  .wave-4 {
+    animation: wavePulse 6s ease-in-out infinite 4.5s;
+  }
+
+  @keyframes wavePulse {
+    0%, 100% {
+      transform: scale(0.96);
+      opacity: 0.15;
+    }
+    50% {
+      transform: scale(1.04);
+      opacity: 0.35;
+    }
+  }
+
+  /* Content Wrapper */
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Location Badge */
+  .header-badge-container {
+    margin-bottom: 2.2rem;
+  }
+
+  .location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(5, 161, 152, 0.25);
+    box-shadow: 0 4px 14px rgba(5, 161, 152, 0.08);
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .location-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(5, 161, 152, 0.14);
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-brand-primary);
+    box-shadow: 0 0 0 0 rgba(5, 161, 152, 0.7);
+    animation: dotPulse 2s infinite cubic-bezier(0.45, 0, 0.2, 1);
+  }
+
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(5, 161, 152, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 8px rgba(5, 161, 152, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(5, 161, 152, 0);
+    }
+  }
+
+  .badge-text {
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    color: var(--color-brand-primary);
+  }
+
+  /* Brand Hero */
+  .brand-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .logo-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-glow {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, rgba(5, 161, 152, 0.22) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(16px);
+    z-index: -1;
+    animation: iconGlow 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes iconGlow {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    100% { transform: scale(1.15); opacity: 0.9; }
+  }
+
+  .brand-icon {
+    width: 130px;
+    height: auto;
+    filter: drop-shadow(0 8px 20px rgba(5, 161, 152, 0.15));
+  }
+
+  .logo-text-wrapper {
+    margin-bottom: 1.4rem;
+    max-width: 90%;
+  }
+
+  .brand-wordmark {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(5, 161, 152, 0.1));
+  }
+
+  .congress-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 900;
+    line-height: 1.25;
+    color: var(--color-text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.85rem;
+    max-width: 680px;
+  }
+
+  .congress-subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    max-width: 560px;
+    font-weight: 400;
+  }
+
+  /* Coming Soon Card with Glassmorphism */
+  .coming-soon-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(5, 161, 152, 0.2);
+    box-shadow: 
+      0 20px 40px -15px rgba(5, 161, 152, 0.1),
+      0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+    border-radius: 28px;
+    padding: 2.75rem 2rem;
+    margin-bottom: 3.5rem;
+    backdrop-filter: blur(16px);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .coming-soon-card:hover {
+    border-color: rgba(5, 161, 152, 0.35);
+    box-shadow: 
+      0 24px 50px -15px rgba(5, 161, 152, 0.16),
+      0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+  }
+
+  .card-glass-header {
+    margin-bottom: 2.2rem;
+  }
+
+  .announcement-pill {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-brand-primary);
+    background: var(--color-brand-light);
+    border: 1px solid rgba(5, 161, 152, 0.2);
+    padding: 0.35rem 0.95rem;
+    border-radius: 9999px;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 900;
+    color: var(--color-text-main);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+  /* Countdown Grid */
+  .countdown-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 84px;
+  }
+
+  .time-number-card {
+    width: 100%;
+    height: 96px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border: 1.5px solid rgba(5, 161, 152, 0.2);
+    box-shadow: 
+      0 8px 20px rgba(15, 23, 42, 0.04),
+      0 2px 6px rgba(5, 161, 152, 0.06);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .time-number-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-brand-primary);
+    box-shadow: 
+      0 12px 24px rgba(5, 161, 152, 0.12),
+      0 4px 8px rgba(5, 161, 152, 0.08);
+  }
+
+  .time-number {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 900;
+    color: var(--color-brand-primary);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .time-label {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-subtle);
+  }
+
+  .time-separator {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(5, 161, 152, 0.4);
+    align-self: flex-start;
+    margin-top: 22px;
+  }
+
+  .countdown-footnote {
+    font-family: var(--font-body);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    background: rgba(240, 253, 250, 0.8);
+    border: 1px solid rgba(5, 161, 152, 0.18);
+    border-radius: 12px;
+    padding: 0.55rem 1.1rem;
+  }
+
+  .footnote-icon {
+    color: var(--color-brand-primary);
+    flex-shrink: 0;
+  }
+
+  /* Social Media Section */
+  .social-section {
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+
+  .social-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 0.35rem;
+  }
+
+  .social-subtitle {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.6rem;
+  }
+
+  .social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.95rem 1.15rem;
+    background: #ffffff;
+    border: 1.5px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  }
+
+  .social-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    background: var(--color-brand-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-brand-primary);
+    margin-right: 0.85rem;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+  }
+
+  .social-svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social-btn-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  .social-platform {
+    font-size: 0.76rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-subtle);
+  }
+
+  .social-handle {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+  }
+
+  .arrow-svg {
+    color: var(--color-text-subtle);
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  /* Social Hover States */
+  .social-btn:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-brand-primary);
+    box-shadow: 0 12px 24px rgba(5, 161, 152, 0.12);
+  }
+
+  .social-btn:hover .social-icon-box {
+    background: var(--color-brand-primary);
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  .social-btn:hover .arrow-svg {
+    transform: translateX(3px);
+    color: var(--color-brand-primary);
+  }
+
+  /* Site Footer */
+  .site-footer {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(5, 161, 152, 0.2) 50%, transparent 100%);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.86rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.3rem;
+  }
+
+  .footer-text strong {
+    color: var(--color-brand-primary);
+  }
+
+  .footer-subtext {
+    font-size: 0.78rem;
+    color: var(--color-text-subtle);
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 640px) {
+    .page-container {
+      padding: 2rem 1rem 3rem;
+    }
+
+    .brand-icon {
+      width: 105px;
+    }
+
+    .brand-wordmark {
+      max-width: 290px;
+    }
+
+    .coming-soon-card {
+      padding: 2rem 1.2rem;
+      border-radius: 22px;
+    }
+
+    .countdown-grid {
+      gap: 0.4rem;
+    }
+
+    .time-block {
+      min-width: 64px;
+    }
+
+    .time-number-card {
+      height: 74px;
+      border-radius: 14px;
+    }
+
+    .time-number {
+      font-size: 1.85rem;
+    }
+
+    .time-separator {
+      font-size: 1.4rem;
+      margin-top: 18px;
+    }
+
+    .social-links-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .time-separator {
+      display: none;
+    }
+    
+    .countdown-grid {
+      gap: 0.5rem;
+    }
+
+    .time-block {
+      min-width: calc(50% - 0.5rem);
+    }
+  }
+</style>
